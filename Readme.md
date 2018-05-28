@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Hanna Zahorodnia](https://up.htmlacademy.ru/htmlcss/21/user/791217).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 
