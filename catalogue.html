@@ -18,27 +18,52 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
-      <section class="search-hotel">
+      <section class="search-hotels">
         <h2 class="visually-hidden">Поиск отеля</h2>
-        <div class="search-list column-one">
-          <h3 class="search-title">Инфраструктура:</h3>
-          <ul>
-            <li class="search-item">Бассейн</li>
-            <li class="search-item">Парковка</li>
-            <li class="search-item">Wi-Fi</li>
-          </ul>
-        </div>
-        <div class="search-list column-two">
-          <h3 class="search-title">Тип жилья:</h3>
-          <ul>
-            <li class="search-item">Гостиница</li>
-            <li class="search-item">Мотель</li>
-            <li class="search-item">Апартаменты</li>
-          </ul>
-        </div>
-        <div class="filter-price">
-        <!-- Место для формы -->
-        </div>
+        <form class="search" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="search-option">
+                <input type="checkbox" name="swimming-pool" class="visually-hidden search-input search-input-checkbox" id="search-swimming-pool" checked>
+                <label for="search-swimming-pool">Бассейн</label>
+              </li>
+              <li class="search-option">
+                <input type="checkbox" name="parking" class="visually-hidden search-input search-input-checkbox" id="search-parking">
+                <label for="search-parking">Парковка</label>
+              </li>
+              <li class="search-option">
+                <input type="checkbox" name="wi-fi" class="visually-hidden search-input search-input-checkbox" id="search-wi-fi">
+                <label for="search-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="search-option">
+                <input type="checkbox" name="hotel" class="visually-hidden search-input search-input-checkbox" id="search-hotel" checked> 
+                <label for="search-hotel">Гостиница</label>
+              </li>
+              <li class="search-option">
+                <input type="checkbox" name="motel" class="visually-hidden search-input search-input-checkbox" id="search-motel" checked>
+                <label for="search-motel">Мотель</label>
+              </li>
+              <li class="search-option">
+                <input type="checkbox" name="apartments" class="visually-hidden search-input search-input-checkbox" id="search-apartments" checked>
+                <label for="search-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="price-range">
+              <span class="price-min">от 0</span>
+              <span class="price-max">До 3000</span>
+              <input type="range" min="0" max="3000" step="100" value="1800">
+          </fieldset>
+          <button type="submit" class="search-button button">Показать</button>
+        </form>
       </section>
       <section class="listing-options">
         <h2 class="search-result">Найдено: 3</h2>
@@ -80,7 +105,7 @@
             <p class="hotel-price">От 2000 Р.</p>
             <a class="button hotel-three-button read-more-button" href="#">Забронировать</a>
             <a class="button hotel-three-button book-button" href="#">Подробнее</a>
-            <p class="hotel-stars stars-two"><span class="visually-hidden">Двуххзвездочные апартаменты"</span></p>
+            <p class="hotel-stars stars-two"><span class="visually-hidden">Двухзвездочные апартаменты</span></p>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
         </ul>
