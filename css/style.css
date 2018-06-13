@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-size: 21px;
+
+  text-align: center;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: rgb(0, 0, 0);
+}
+
+.site-navigation a:hover {
+  color: rgb(129, 179, 210);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.site-navigation a:active {
+  color: rgb(118, 99, 87);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.container h1 {
+  text-align: center;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.subtitle-info {
+  text-align: center;
+
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-item {
+  text-align: center;
+}
+
+.benefits-item h3 {
+  font-size: 21px;
+}
+
+.number {
+  font-weight: 400;
+}
+
+.description {
+  font-weight: 400;
+}
+
+.benefits-item-one {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(129, 179, 210);
+}
+
+.recommendations-list {
+  list-style: none;
+
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.recommendation-item h4 {
+  font-size: 21px;
+}
+
+.recommendation-item p {
+  font-weight: 400;
+}
+
+.benefits-item-two {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(129, 179, 210);
+}
+
+.benefits-group {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(238, 238, 238);
+}
+
+.search b {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.intro-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.search-form-header {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(118, 99, 87);
+}
+
+.search-form-header:hover {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(96, 78, 67);
+}
+
+.search-form-header:focus {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(80, 62, 51);
+}
+
+.search-form-button {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(129, 179, 210);
+}
+
+.search-form-button:hover {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(102, 158, 192);
+}
+
+.search-form-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(84, 150, 189);
+}
+
+.search-item {
+  line-height: 26px;
+}
+
+.search-item input {
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.search-item input:hover {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(235, 235, 235);
+}
+
+.search-item input:focus {
+  color: rgb(0, 0, 0);
+
+  background-color: transparent;
+  border: 2px solid rgb(229, 229, 229);
+}
+
+.page-footer {
+  color: rgb(0, 0, 0);
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-copyright a {
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.search-hotels {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(129, 179, 210);
+  background-image: url("../img/filter-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.filter-title {
+  font-size: 16px;
+
+  color: rgb(255, 255, 255);
+}
+
+.search-list {
+  list-style: none;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.price-min,
+.price-max {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.search-button {
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgb(255, 255, 255);
+
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.search-button.button:hover {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.listing-options b {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-by {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sort-by h3 {
+  font-weight: 400;
+}
+
+.sort-by-list,
+.sort-value-list {
+  list-style: none;
+}
+
+.sort-by-list a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.sort-by-list a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-by-list a:focus {
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.sort-by-list a:active {
+  color: #81b3d2;
+  border: none;
+}
+
+.hotels-group {
+  list-style: none;
+}
+
+.hotel-name {
+  line-height: 26px;
+}
+
+.hotels-group a {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.hotels-group a:hover {
+  color: #81b3d2;
+}
+
+.hotels-group a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-type,
+.hotel-price {
+  font-weight: 400;
+
+  color: #333333;
+
+  background-color: rgb(255, 255, 255);
+}
+
+
+.hotel-price+.read-more-button {
+  font-size: 14px;
+
+  color: rgb(255, 255, 255);
+
+  background-color: #81b3d2;
+}
+
+
+.hotel-price+.read-more-button:hover {
+  color: #ffffff;
+  
+  background-color: #669ec0;
+}
+
+.hotel-price+.read-more-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.read-more-button+.book-button {
+  font-size: 14px;
+
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(118, 99, 87);
+}
+
+.read-more-button+.book-button:hover {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(96, 78, 67);
+}
+
+.read-more-button+.book-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(80, 62, 51);
+}
+
+.hotel-rating {
+  font-weight: 400;
+
+  color: #666666;
+
+  background-color: #f2f2f2;
+}

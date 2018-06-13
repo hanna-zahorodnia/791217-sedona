@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Гостиницы в Седоне</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="page-header">
@@ -16,14 +19,14 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="container-inner">
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
       <section class="search-hotels">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
+            <legend class="filter-title">Инфраструктура:</legend>
+            <ul class="search-list">
               <li class="search-option">
                 <input type="checkbox" name="swimming-pool" class="visually-hidden search-input search-input-checkbox" id="search-swimming-pool" checked>
                 <label for="search-swimming-pool">Бассейн</label>
@@ -39,8 +42,8 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
+            <legend class="filter-title">Тип жилья:</legend>
+            <ul class="search-list">
               <li class="search-option">
                 <input type="checkbox" name="hotel" class="visually-hidden search-input search-input-checkbox" id="search-hotel" checked> 
                 <label for="search-hotel">Гостиница</label>
@@ -56,7 +59,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend class="filter-title">Стоимость в сутки (Р):</legend>
             <div class="price-range">
               <span class="price-min">от 0</span>
               <span class="price-max">До 3000</span>
@@ -70,14 +73,14 @@
         <div class="sort-by">
           <h3>Сортировка:</h3>
           <div class="sort-by-option">
-            <ul>
+            <ul class="sort-by-list">
               <li><a class="sort-by-item" href="#">По цене</a></li>
               <li><a class="sort-by-item" href="#">По типу</a></li>
               <li><a class="sort-by-item" href="#">По рейтингу</a></li>
             </ul>
           </div>
           <div class="sort-by-value">
-            <ul>
+            <ul class="sort-value-list">
               <li><a class="sort-value visually-hidden" href="#">Сортировка по возрастанию</a></li>
               <li><a class="sort-value visually-hidden" href="#">Сортировка по убыванию</a></li>
             </ul>
@@ -85,9 +88,9 @@
         </div>
       </section>
       <section class="hotels-list">
-        <ul>
+        <ul class="hotels-group">
           <li class="hotel-item">
-            <h2 class="hotel-name">Amara Resort & Spa</h2>
+            <h2><a class="hotel-name" href="#">Amara Resort & Spa</a></h2>
             <img src="img/hotel-1.jpg" width="135" height="90" class="hotels-photo hotels-photo-one" alt="Гостиница Amara Resort & Spa">
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От 4000 Р.</p>
@@ -97,7 +100,7 @@
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
           <li class="hotel-item">
-            <h2 class="hotel-name">Desert Quail Inn</h2>
+            <h2><a class="hotel-name" href="#">Desert Quail Inn</a></h2>
             <img src="img/hotel-2.jpg" width="135" height="90" class="hotels-photo hotels-photo-two" alt="Мотель Desert Quail Inn">
             <p class="hotel-type">Мотель</p>
             <p class="hotel-price">От 3000 Р.</p>
@@ -107,7 +110,7 @@
             <span class="hotel-rating">Рейтинг: 8,9</span>
           </li>
           <li class="hotel-item">
-            <h2 class="hotel-name">Villas at Poco Diablo</h2>
+            <h2><a class="hotel-name" href="#">Villas at Poco Diablo</a></h2>
             <img src="img/hotel-3.jpg" width="135" height="90" class="hotels-photo hotels-photo-three" alt="Апартаменты Villas at Poco Diablo">
             <p class="hotel-type">Апартаменты</p>
             <p class="hotel-price">От 2000 Р.</p>
