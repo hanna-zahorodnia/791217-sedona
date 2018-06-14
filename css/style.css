@@ -6,10 +6,10 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: #333333;
   text-transform: uppercase;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 a {
@@ -20,7 +20,7 @@ a {
   font-size: 21px;
 
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
 
@@ -31,7 +31,7 @@ a {
   line-height: 26px;
   color: rgb(0, 0, 0);
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .site-navigation {
@@ -39,25 +39,25 @@ a {
 }
 
 .site-navigation a {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .site-navigation a:hover {
-  color: rgb(129, 179, 210);
+  color: #81b3d2;
 
-  background-color: rgb(255, 255, 255);
-}
-
-.site-navigation a:focus {
-  color: rgba(0, 0, 0, 0.3);
-
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .site-navigation a:active {
-  color: rgb(118, 99, 87);
+  color: rgba(0, 0, 0, 0.3);
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
+}
+
+.site-navigation.active a {
+  color: #766357;
+
+  background-color: #ffffff;
 }
 
 .container h1 {
@@ -67,7 +67,7 @@ a {
   line-height: 26px;
   color: rgb(0, 0, 0);
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .subtitle-info {
@@ -75,9 +75,13 @@ a {
 
   line-height: 26px;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  color: #333333;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
+}
+
+.recommendation-item p{
+  color: #333333;
 }
 
 .benefits-list {
@@ -98,12 +102,18 @@ a {
 
 .description {
   font-weight: 400;
+
+  color: #333333;
 }
 
 .benefits-item-one {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(129, 179, 210);
+}
+
+.benefits-item-one .description {
+  color: #ffffff;
 }
 
 .recommendations-list {
@@ -111,7 +121,7 @@ a {
 
   color: rgb(0, 0, 0);
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .recommendation-item h4 {
@@ -123,9 +133,13 @@ a {
 }
 
 .benefits-item-two {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(129, 179, 210);
+}
+
+.benefits-item-two .description {
+  color: #ffffff;
 }
 
 .benefits-group {
@@ -137,6 +151,8 @@ a {
 .search b {
   font-size: 30px;
   line-height: 36px;
+
+  color: #000000;
 }
 
 .intro-text {
@@ -146,36 +162,42 @@ a {
 }
 
 .search-form-header {
-  color: rgb(255, 255, 255);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+
+  color: #ffffff;
 
   background-color: rgb(118, 99, 87);
 }
 
 .search-form-header:hover {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(96, 78, 67);
 }
 
-.search-form-header:focus {
+.search-form-header:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: rgb(80, 62, 51);
 }
 
 .search-form-button {
-  color: rgb(255, 255, 255);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+
+  color: #ffffff;
 
   background-color: rgb(129, 179, 210);
 }
 
 .search-form-button:hover {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(102, 158, 192);
 }
 
-.search-form-button:focus {
+.search-form-button:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: rgb(84, 150, 189);
@@ -183,6 +205,8 @@ a {
 
 .search-item {
   line-height: 26px;
+
+  color: #000000;
 }
 
 .search-item input {
@@ -233,7 +257,7 @@ a {
 }
 
 .search-hotels {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(129, 179, 210);
   background-image: url("../img/filter-background.jpg");
@@ -244,7 +268,7 @@ a {
 .filter-title {
   font-size: 16px;
 
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .search-list {
@@ -252,32 +276,32 @@ a {
 
   font-size: 14px;
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .price-min,
 .price-max {
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: transparent;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #ffffff;
 }
 
 .search-button {
   font-size: 14px;
   line-height: 21px;
 
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: transparent;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #ffffff;
 }
 
 .search-button.button:hover {
   color: rgb(0, 0, 0);
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .listing-options b {
@@ -302,22 +326,22 @@ a {
 
 .sort-by-list a {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .sort-by-list a:hover {
   color: #81b3d2;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-by-list a:focus {
+.sort-by-list a:active {
   color: rgb(0, 0, 0);
   border: none;
 }
 
-.sort-by-list a:active {
+.sort-by-list.active a {
   color: #81b3d2;
   border: none;
 }
@@ -333,14 +357,14 @@ a {
 .hotels-group a {
   color: rgb(0, 0, 0);
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .hotels-group a:hover {
   color: #81b3d2;
 }
 
-.hotels-group a:focus {
+.hotels-group a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -350,14 +374,14 @@ a {
 
   color: #333333;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 
 .hotel-price+.read-more-button {
   font-size: 14px;
 
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: #81b3d2;
 }
@@ -369,7 +393,7 @@ a {
   background-color: #669ec0;
 }
 
-.hotel-price+.read-more-button:focus {
+.hotel-price+.read-more-button:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
@@ -378,18 +402,18 @@ a {
 .read-more-button+.book-button {
   font-size: 14px;
 
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(118, 99, 87);
 }
 
 .read-more-button+.book-button:hover {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   background-color: rgb(96, 78, 67);
 }
 
-.read-more-button+.book-button:focus {
+.read-more-button+.book-button:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: rgb(80, 62, 51);
@@ -401,4 +425,17 @@ a {
   color: #666666;
 
   background-color: #f2f2f2;
+}
+
+.visuallyhidden {
+position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
