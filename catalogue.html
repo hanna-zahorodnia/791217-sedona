@@ -24,52 +24,59 @@
       <section class="search-hotels">
         <h2 class="visuallyhidden">Поиск отеля</h2>
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend class="filter-title">Инфраструктура:</legend>
-            <ul class="search-list">
-              <li class="search-option">
-                <input type="checkbox" name="swimming-pool" class="visuallyhidden search-input search-input-checkbox" id="search-swimming-pool" checked>
-                <label for="search-swimming-pool">Бассейн</label>
-              </li>
-              <li class="search-option">
-                <input type="checkbox" name="parking" class="visuallyhidden search-input search-input-checkbox" id="search-parking">
-                <label for="search-parking">Парковка</label>
-              </li>
-              <li class="search-option">
-                <input type="checkbox" name="wi-fi" class="visuallyhidden search-input search-input-checkbox" id="search-wi-fi">
-                <label for="search-wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="filter-title">Тип жилья:</legend>
-            <ul class="search-list">
-              <li class="search-option">
-                <input type="checkbox" name="hotel" class="visuallyhidden search-input search-input-checkbox" id="search-hotel" checked> 
-                <label for="search-hotel">Гостиница</label>
-              </li>
-              <li class="search-option">
-                <input type="checkbox" name="motel" class="visuallyhidden search-input search-input-checkbox" id="search-motel" checked>
-                <label for="search-motel">Мотель</label>
-              </li>
-              <li class="search-option">
-                <input type="checkbox" name="apartments" class="visuallyhidden search-input search-input-checkbox" id="search-apartments" checked>
-                <label for="search-apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="filter-title">Стоимость в сутки (Р):</legend>
-            <div class="price-range">
-              <span class="price-min">от 0</span>
-              <span class="price-max">До 3000</span>
-              <input type="range" min="0" max="3000" step="100" value="1800">
-          </fieldset>
-          <button type="submit" class="search-button button">Показать</button>
+          <div class="filters">
+            <div class="search-checkbox">
+              <fieldset class="search-checkbox-one">
+                <legend class="filter-title">Инфраструктура:</legend>
+                <ul class="search-list">
+                  <li class="search-option">
+                    <input type="checkbox" name="swimming-pool" class="visuallyhidden search-input search-input-checkbox" id="search-swimming-pool" checked>
+                    <label for="search-swimming-pool">Бассейн</label>
+                  </li>
+                  <li class="search-option">
+                    <input type="checkbox" name="parking" class="visuallyhidden search-input search-input-checkbox" id="search-parking">
+                    <label for="search-parking">Парковка</label>
+                  </li>
+                  <li class="search-option">
+                    <input type="checkbox" name="wi-fi" class="visuallyhidden search-input search-input-checkbox" id="search-wi-fi">
+                    <label for="search-wi-fi">Wi-Fi </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-checkbox-two">
+                <legend class="filter-title">Тип жилья:</legend>
+                <ul class="search-list">
+                  <li class="search-option">
+                    <input type="checkbox" name="hotel" class="visuallyhidden search-input search-input-checkbox" id="search-hotel" checked> 
+                    <label for="search-hotel">Гостиница</label>
+                  </li>
+                  <li class="search-option">
+                    <input type="checkbox" name="motel" class="visuallyhidden search-input search-input-checkbox" id="search-motel" checked>
+                    <label for="search-motel">Мотель</label>
+                  </li>
+                  <li class="search-option">
+                    <input type="checkbox" name="apartments" class="visuallyhidden search-input search-input-checkbox" id="search-apartments" checked>
+                    <label for="search-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="search-price">
+              <fieldset>
+                <legend class="filter-title">Стоимость в сутки (Р):</legend>
+                <div class="price-range">
+                  <span class="price-min">от 0</span>
+                  <span class="price-max">До 3000</span>
+                  <input type="range" min="0" max="3000" step="100" value="1800">
+                </div>
+              </fieldset>
+              <button type="submit" class="search-button button">Показать</button>
+            </div>
+          </div>
         </form>
       </section>
       <section class="listing-options">
-        <b>Найдено: 3</b>
+        <b class="result">Найдено: 3</b>
         <div class="sort-by">
           <h3>Сортировка:</h3>
           <div class="sort-by-option">
@@ -123,17 +130,19 @@
       </section>
     </main>
     <footer class="page-footer">
-      <p class="hashtag">#visitSEDONA</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
-        </ul>
+      <div class="container">
+        <p class="hashtag">#visitSEDONA</p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Twitter</a></li>
+            <li><a class="social-button" href="#">Facebook</a></li>
+            <li><a class="social-button" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">Website by <img src="img/logo-htmlacademy.svg" width="115" height="41" class="developer-logo" alt="HTML Academy">.</a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by <img src="img/logo-htmlacademy.svg" width="115" height="41" class="developer-logo" alt="HTML Academy"></a>
-      </p>
     </footer>
   </body>
 </html>
