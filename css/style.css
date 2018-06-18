@@ -117,9 +117,9 @@ a {
   background-color: #ffffff;
 }
 
-.site-navigation.active a {
+.site-navigation .active {
   color: #766357;
-
+  
   background-color: #ffffff;
 }
 
@@ -393,6 +393,7 @@ a {
 .search-form-header {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
+  font-weight: 700;
 
   color: #ffffff;
 
@@ -414,6 +415,7 @@ a {
 .search-form-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
+  font-weight: 700;
 
   color: #ffffff;
 
