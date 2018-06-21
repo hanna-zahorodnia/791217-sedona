@@ -2,8 +2,6 @@ body {
   margin: 0;
   padding: 0;
 
-  min-width: 1200px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -11,7 +9,13 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+}
+
+.page-container {
+  /*min-width: 1200px;*/
+  width: 1200px;
+  margin: 0 auto;
 }
 
 a {
@@ -30,50 +34,33 @@ a {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+  position: relative;
 }
 
 .page-header {
-  margin-bottom: 0px;
-
-  min-height: 56px;
-
-  background-color: #ffffff;
+  position: relative;
 }
 
 .main-navigation {
   display: flex;
-  flex-direction: row;
-
-  width: 100%;
-  min-height: 56px;
 
   line-height: 26px;
   color: rgb(0, 0, 0);
-
-  background-color: #ffffff;
-  outline: 1px solid #ec1c24;
 }
 
 .site-navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-
-  width: 1200px;
 
   margin: 0;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; 
+  margin-right: auto; 
 
-  min-height: 56px;
+  background-color: #ffffff;
 
   list-style: none;
-  outline: 1px solid #ec1c24;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -93,6 +80,12 @@ a {
   width: 239px;
   outline: 1px solid #ec1c24;
   text-align: center;
+
+  flex-basis: 239px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -123,14 +116,12 @@ a {
   background-color: #ffffff;
 }
 
+.container {
+  background-color: #ffffff;
+}
+
 .container-intro {
-  display: flex;
-  flex-direction: column;
-
-  margin: 0;
-  padding: 0;
-
-  align-items: center;
+  position: relative;
 }
 
 .background-image {
@@ -138,17 +129,15 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  margin-left: auto;
-  margin-right: auto;
   z-index: 1;
 
-  width: 100%;
-  height: 773px;
+  width: 1200px;
+  height: 508px;
 }
 
 .welcome-greeting {
   position: absolute;
-  top: 132px;
+  top: 76px;
   right: 0;
   left: 0;
   margin-left: auto;
@@ -161,50 +150,37 @@ a {
   background-color: transparent;
 }
 
-.container h1 {
-  position: absolute;
-  top: 627px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 35px;
+.introduction {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding: 55px 380px 0px; 
+  text-align: center;
 
   font-size: 21px;
   line-height: 26px;
   color: rgb(0, 0, 0);
-
-  background-color: #ffffff;
-  z-index: 4;
 }
 
 .subtitle-info {
-  position: absolute;
-  top: 707px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin-bottom: 0px;
+  padding: 0px 350px 50px;
   text-align: center;
 
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-
-  background-color: #ffffff;
-  z-index: 4;
-}
-
-.recommendation-item p{
-  color: #333333;
 }
 
 .benefits-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .benefits-item {
+  line-height: 21px;
+
+  background-color: #eeeeee;
   text-align: center;
 }
 
@@ -222,75 +198,83 @@ a {
   color: #333333;
 }
 
-.benefits-item-one {
+.one-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-one,
+.content-two {
   color: #ffffff;
 
   background-color: rgb(129, 179, 210);
+
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
-.benefits-item-one .description {
+.content-one h3,
+.content-two h3,
+.benefits-item-group h3 {
+  margin: 0;
+  padding-top: 45px;
+  padding-right: 121px;
+  padding-left: 121px; 
+  margin-bottom: 25px;
+}
+
+.content-one .description,
+.content-two .description {
+  margin-top: 23px;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.benefits-item-one .description,
+.benefits-item-two .description {
   color: #ffffff;
 }
 
 .recommendations-list {
   display: flex;
-  margin-left: -40px;
+  flex-wrap: wrap;
   padding: 0;
-
-  width: 1200px;
+  margin: 0;
 
   list-style: none;
 
   color: rgb(0, 0, 0);
 
   background-color: #ffffff;
-
-  /* Временно для сетки */
-  min-height: 330px;
-  outline: 1px solid #ec1c24;
 }
 
 .recommendation-item {
-  width: 400px;
-   /* Временно для сетки */
-  min-height: 330px;
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  /* Временно для сетки */
   outline: 1px solid #ec1c24;
 }
 
 .recommendation-item h4 {
+  margin: 0;
+  padding-top: 160px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 25px;
+
   font-size: 21px;
 }
 
 .recommendation-item p {
-  font-weight: 400;
-}
-
-.benefits-item-two {
-  color: #ffffff;
-
-  background-color: rgb(129, 179, 210);
-}
-
-.benefits-item-two .description {
-  color: #ffffff;
-}
-
-.one-container {
-  display: flex;
   margin: 0;
-  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 83px;
+  font-weight: 400;
 
-  /* Временно для сетки */
-  min-height: 256px;
-  outline: 1px solid #ec1c24;
-}
-
-.content-item-one {
-  margin-left: -40px;
-  width: 400px;
-  /* Временно для сетки */
-  min-height: 256px;
-  outline: 1px solid #ec1c24;
+  color: #333333;
 }
 
 .benefit-one-pic,
@@ -302,33 +286,12 @@ a {
 .two-container {
   display: flex;
   flex-direction: row-reverse;
-  margin: 0;
-  padding: 0;
-  margin-left: -40px;
-  /* Временно для сетки */
-  min-height: 256px;
-  outline: 1px solid #ec1c24;
-}
-
-.content-item-two {
-  width: 400px;
-  /* Временно для сетки */
-  min-height: 256px;
-  outline: 1px solid #ec1c24;
+  flex-wrap: wrap;
 }
 
 .benefits-group {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  margin-bottom: 55px;
-  margin-left: -40px;
-   /* Временно для сетки */
-  min-height: 256px;
-  outline: 1px solid #ec1c24;
+  flex-wrap: wrap;
 
   color: rgb(0, 0, 0);
 
@@ -336,20 +299,27 @@ a {
 }
 
 .benefits-item-group {
-  width: 400px;
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
   /* Временно для сетки */
-  min-height: 256px;
   outline: 1px solid #ec1c24;
+}
+
+.benefits-item-group .description {
+  margin: 0;
+  margin-top: 23px;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-bottom: 55px;
 }
 
 .search b {
   display: block;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-
-  /* Временно для сетки */
-  min-height: 36px;
+  margin-bottom: 22px;
+  padding-top: 55px;
+  padding-right: 430px;
+  padding-left: 430px;
 
   font-size: 30px;
   line-height: 36px;
@@ -361,16 +331,11 @@ a {
 }
 
 .intro-text {
-  margin: 0;
-  margin-bottom: 135px;
-  padding: 0;
-
-  /* Временно для сетки */
-  min-height: 24px;
-
-  font-size: 14px;
-  line-height: 24px;
+  margin-bottom: 47px;
+  padding-right: 370px;
+  padding-left: 370px;
   font-weight: 400;
+  line-height: 24px;
 
   text-align: center;
 
@@ -379,23 +344,37 @@ a {
 
 .container-search {
   width: 568px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -398px;
+
+ /* background-color: #ffffff; */
   /* Временно для сетки */
   min-height: 481px;
-  outline: 1px solid #ec1c24;
+
 }
 
 .hotel-form {
   padding: 55px;
+  width: 568px;
+  background-color: #ffffff;
   /* Временно для сетки */
   min-height: 395px;
+  outline: 1px solid #ec1c24;
+  
+  position: absolute;
+  box-sizing: border-box;
 }
 
 .search-form-header {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 21px;
   font-weight: 700;
 
-  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   background-color: rgb(118, 99, 87);
 }
@@ -462,27 +441,28 @@ a {
 }
 
 .page-footer {
+  position: relative;
+  margin-top: -123px;
   /* Временно для сетки */
   min-height: 120px;
-  background: none;
 
   color: rgb(0, 0, 0);
 
   background-color: rgba(255, 255, 255, 0.9);
-  outline: 1px solid #ec1c24;
 }
 
 .page-footer .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  background-color: transparent;
 }
 
 .hashtag {
   margin: 0;
-  padding: 45px 0;
-
-  width: 145px;
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  margin-right: -72px;
 
   outline: 1px solid #ec1c24;
 
@@ -506,16 +486,18 @@ a {
 
 .footer-copyright {
   margin: 0;
-  padding: 40px 0;
-  width: 200px;
+  padding: 38px 0;
+  margin-right: -35px;
 
   outline: 1px solid #ec1c24;
 }
 
-.footer-copyright a {
-  line-height: 26px;
+.footer-copyright span {
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  line-height: 26px;
+
+  position: relative;
+  top: -15px;
 }
 
 .container-inner {
