@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-container page-container-inner">
   	<header class="page-header">
       <nav class="main-navigation">
         <a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" class="header-logo" alt="Логотип курорта Седона"></a>
@@ -24,8 +25,6 @@
       <section class="search-hotels">
         <h2 class="visuallyhidden">Поиск отеля</h2>
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
-          <div class="filters">
-            <div class="search-checkbox">
               <fieldset class="search-checkbox-one">
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="search-list">
@@ -60,7 +59,6 @@
                   </li>
                 </ul>
               </fieldset>
-            </div>
             <div class="search-price">
               <fieldset>
                 <legend class="filter-title">Стоимость в сутки (Р):</legend>
@@ -72,28 +70,24 @@
               </fieldset>
               <button type="submit" class="search-button button">Показать</button>
             </div>
-          </div>
         </form>
       </section>
       <section class="listing-options">
         <b class="result">Найдено: 3</b>
-        <div class="sort-by">
+        <div class="sort-by-option">
           <h3>Сортировка:</h3>
-          <div class="sort-by-option">
-            <ul class="sort-by-list">
-              <li><a class="sort-by-item" href="#">По цене</a></li>
-              <li><a class="sort-by-item" href="#">По типу</a></li>
-              <li><a class="sort-by-item" href="#">По рейтингу</a></li>
-            </ul>
-          </div>
-          <div class="sort-by-value">
-            <ul class="sort-value-list">
-              <li><a class="sort-value visuallyhidden" href="#">Сортировка по возрастанию</a></li>
-              <li><a class="sort-value visuallyhidden" href="#">Сортировка по убыванию</a></li>
-            </ul>
-          </div>
+          <ul class="sort-by-list">
+            <li class="sort-by-item"><a href="#">По цене</a></li>
+            <li class="sort-by-item"><a href="#">По типу</a></li>
+            <li class="sort-by-item"><a href="#">По рейтингу</a></li>
+          </ul>
         </div>
+        <ul class="sort-value-list">
+          <li><a class="sort-value" href="#"><span class="visuallyhidden">Сортировка по возрастанию</span></a></li>
+          <li><a class="sort-value" href="#"><span class="visuallyhidden">Сортировка по убыванию</span></a></li>
+        </ul>
       </section>
+
       <section class="hotels-list">
         <ul class="hotels-group">
           <li class="hotel-item">
@@ -101,9 +95,9 @@
             <img src="img/hotel-1.jpg" width="135" height="90" class="hotels-photo hotels-photo-one" alt="Гостиница Amara Resort & Spa">
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От 4000 Р.</p>
-            <a class="button hotel-one-button read-more-button" href="#">Забронировать</a>
-            <a class="button hotel-one-button book-button" href="#">Подробнее</a>
-            <p class="hotel-stars stars-four"><span class="visuallyhidden">Четырехзвездочная гостиница</span></p>
+            <a class="button hotel-button read-more-button" href="#">Подробнее</a>
+            <a class="button hotel-button book-button" href="#">Забронировать</a>
+            <p class="hotel-stars stars-four">++++<span class="visuallyhidden">Четырехзвездочная гостиница</span></p>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
           <li class="hotel-item">
@@ -111,9 +105,9 @@
             <img src="img/hotel-2.jpg" width="135" height="90" class="hotels-photo hotels-photo-two" alt="Мотель Desert Quail Inn">
             <p class="hotel-type">Мотель</p>
             <p class="hotel-price">От 3000 Р.</p>
-            <a class="button hotel-two-button read-more-button" href="#">Забронировать</a>
-            <a class="button hotel-two-button book-button" href="#">Подробнее</a>
-            <p class="hotel-stars stars-three"><span class="visuallyhidden">Трехзвездочный мотель</span></p>
+            <a class="button hotel-button read-more-button" href="#">Подробнее</a>
+            <a class="button hotel-button book-button" href="#">Забронировать</a>
+            <p class="hotel-stars stars-three">+++<span class="visuallyhidden">Трехзвездочный мотель</span></p>
             <span class="hotel-rating">Рейтинг: 8,9</span>
           </li>
           <li class="hotel-item">
@@ -121,15 +115,15 @@
             <img src="img/hotel-3.jpg" width="135" height="90" class="hotels-photo hotels-photo-three" alt="Апартаменты Villas at Poco Diablo">
             <p class="hotel-type">Апартаменты</p>
             <p class="hotel-price">От 2000 Р.</p>
-            <a class="button hotel-three-button read-more-button" href="#">Забронировать</a>
-            <a class="button hotel-three-button book-button" href="#">Подробнее</a>
-            <p class="hotel-stars stars-two"><span class="visuallyhidden">Двухзвездочные апартаменты</span></p>
+            <a class="button hotel-button read-more-button" href="#">Подробнее</a>
+            <a class="button hotel-button book-button" href="#">Забронировать</a>
+            <p class="hotel-stars stars-two">++<span class="visuallyhidden">Двухзвездочные апартаменты</span></p>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer-inner">
       <div class="container">
         <p class="hashtag">#visitSEDONA</p>
         <div class="footer-social">
@@ -140,9 +134,10 @@
           </ul>
         </div>
         <p class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">Website by <img src="img/logo-htmlacademy.svg" width="115" height="41" class="developer-logo" alt="HTML Academy">.</a>
+          <span>Website by </span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" class="developer-logo" alt="HTML Academy"></a>
         </p>
       </div>
     </footer>
+  </div>
   </body>
 </html>
