@@ -120,8 +120,8 @@ a {
   content: "";
   position: absolute;
 
-  top: 452px;
-  left: 0px;
+  left: 0;
+  bottom: -5px;
 
   width: 1200px;
   height: 60px;
@@ -139,7 +139,6 @@ a {
   left: 0;
   margin-left: auto;
   margin-right: auto;
-  z-index: 1;
 
   width: 458px;
   height: 352px;
@@ -163,6 +162,10 @@ a {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+}
+
+.sedona-benefits {
+  margin-bottom: 54px;
 }
 
 .benefits-list {
@@ -264,24 +267,51 @@ a {
   font-size: 21px;
 }
 
-.recommendation-item-one {
+.recommendation-item-one h4::before {
+  content: "";
+
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 75px;
+  height: 72px;
+
   background-color: transparent;
   background-image: url("../img/icon-1.svg");
-  background-position: top 60px left 162px;
   background-repeat: no-repeat;
 }
 
-.recommendation-item-two {
+.recommendation-item-two h4::before {
+  content: "";
+
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 74px;
+  height: 70px;
+
   background-color: transparent;
   background-image: url("../img/icon-3.svg");
-  background-position: top 61px left 163px;
   background-repeat: no-repeat;
 }
 
-.recommendation-item-three {
+.recommendation-item-three h4::before {
+  content: "";
+
+  position: absolute;
+  bottom: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 64px;
+  height: 76px;
+
   background-color: transparent;
   background-image: url("../img/icon-2.svg");
-  background-position: top 56px left 168px;
   background-repeat: no-repeat;
 }
 
@@ -334,7 +364,9 @@ a {
 
 .search-hotel-form b {
   display: block;
-  margin: 54px 430px 23px;
+  margin: 0 auto 23px;
+  padding-right: 100px;
+  padding-left: 100px;
 
   font-size: 30px;
   line-height: 36px;
@@ -345,7 +377,9 @@ a {
 }
 
 .intro-text {
-  margin: 0 370px 47px;
+  margin: 0 auto 47px;
+  padding-right: 100px;
+  padding-left: 100px;
   font-weight: 400;
   line-height: 24px;
 
@@ -368,8 +402,7 @@ a {
   display: block;
   margin: 0 auto;
   width: 100%;
-  padding-top: 34px;
-  padding-bottom: 29px;
+  padding: 34px 50px 29px;
 
   background-color: rgb(118, 99, 87);
 }
@@ -454,7 +487,7 @@ a {
   color: rgb(0, 0, 0);
 
   background-color: transparent;
-  border: 2px solid rgb(229, 229, 229);
+  box-shadow: 0 0 0 2px rgb(229, 229, 229);
 }
 
 .calendar {
@@ -492,6 +525,8 @@ a {
 
 .plus,
 .minus {
+  padding: 0;
+
   border: none;
   width: 38px;
   height: 38px;
@@ -500,14 +535,22 @@ a {
   background-color: #f2f2f2;
 }
 
-.plus:hover line,
-.minus:hover line {
-  stroke: #000000;
+.count-less,
+.count-more {
+  color: #a9a9a9;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
 }
 
-.plus:active line,
-.minus:active line {
-  stroke: #81b3d2;
+.count-less:hover,
+.count-more:hover {
+  color: #000000;
+}
+
+.count-less:active,
+.count-more:active {
+  color: #81b3d2;
 }
 
 .search-item-group .search-item {
@@ -540,7 +583,7 @@ a {
   background-color: rgb(129, 179, 210);
 
   width: 100%;
-  padding: 17px 200px;
+  padding: 17px 50px;
 }
 
 .search-form-button:hover {
@@ -947,7 +990,7 @@ a {
   border: none;
 }
 
-.sort-by-list.active a {
+.sort-by-list .active a {
   color: #81b3d2;
   border: none;
 }
@@ -982,6 +1025,10 @@ a {
 }
 
 .sort-value:active path {
+  fill: #81b3d2;
+}
+
+.sort-value-list .active path {
   fill: #81b3d2;
 }
 
