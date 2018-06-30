@@ -903,8 +903,8 @@ a {
   left: 80%;
 }
 
-.range-toggle:hover circle {
-  r: 11;
+.range-toggle:hover {
+  transform: scale(1.1);
 }
 
 .search-button {
