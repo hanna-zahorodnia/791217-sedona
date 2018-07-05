@@ -780,6 +780,12 @@ a {
 }
 
 .map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.map iframe {
   border: none;
 }
 
@@ -945,6 +951,10 @@ a {
   background-repeat: no-repeat;
 }
 
+input:focus + label::before {
+  opacity: 0.5;
+}
+
 input:checked + label::before {
   content: "";
   position: absolute;
@@ -1054,7 +1064,7 @@ input:disabled + label::before {
 .price-controls label {
   display: inline-block;
   
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
 
   cursor: pointer;
@@ -1247,6 +1257,10 @@ input:disabled + label::before {
   cursor: pointer;
 }
 
+.sort-value svg {
+  fill: #cacaca;
+}
+
 .sort-value:hover svg {
   fill: #231f20;
 }
@@ -1255,7 +1269,7 @@ input:disabled + label::before {
   fill: #81b3d2;
 }
 
-.sort-value .active svg {
+.sort-value.active svg {
   fill: #81b3d2;
 }
 
