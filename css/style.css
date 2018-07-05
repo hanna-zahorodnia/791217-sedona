@@ -228,6 +228,7 @@ a {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  max-width: 400px;
   padding: 48px 47px 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -615,8 +616,8 @@ a {
   margin-bottom: 29px;
 }
 
-.form-items .search-item-one input,
-.form-items .search-item-two input {
+.search-item-one input,
+.search-item-two input {
   width: 331px;
   padding-top: 6px;
   padding-bottom: 6px; 
@@ -784,8 +785,15 @@ a {
 
 .page-footer {
   position: relative;
-
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -125px;
+  padding: 25px 100px 35px 132px;
 
   color: rgb(0, 0, 0);
 
@@ -796,16 +804,6 @@ a {
   margin: 0;
 
   background-color: #ffffff;
-}
-
-.page-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 25px 100px 35px 132px;
 }
 
 .hashtag {
@@ -1249,15 +1247,15 @@ input:disabled + label::before {
   cursor: pointer;
 }
 
-.sort-value:hover path {
+.sort-value:hover svg {
   fill: #231f20;
 }
 
-.sort-value:active path {
+.sort-value:active svg {
   fill: #81b3d2;
 }
 
-.sort-value-list .active path {
+.sort-value .active svg {
   fill: #81b3d2;
 }
 
