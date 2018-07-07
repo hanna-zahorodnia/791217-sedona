@@ -913,7 +913,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 28px 73px 7px 70px;
+  padding: 28px 68px 7px 70px;
 }
 
 .search fieldset {
@@ -984,7 +984,7 @@ input:disabled + label::before {
 .search .search-price {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-left: 235px;
+  margin-left: auto;
 
   border: none;
 }
@@ -1041,8 +1041,8 @@ input:disabled + label::before {
 .price-controls {
   position: relative;
 
-  height: 34px;
-  margin-bottom: 18px;
+  height: 32px;
+  margin-bottom: 20px;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1070,10 +1070,20 @@ input:disabled + label::before {
   cursor: pointer;
 }
 
-.price-controls .price-min,
+/*.price-controls .price-min,
 .price-controls .price-max {
   width: 92px;
   padding-left: 65px;
+}*/
+
+.price-controls .price-min {
+  width: 102px;
+  padding-left: 65px;
+}
+
+.price-controls .price-max {
+  width: 100px;
+  padding-left: 46px;
 }
 
 .price-controls input {
@@ -1090,7 +1100,7 @@ input:disabled + label::before {
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .range-controls .scale {
@@ -1121,7 +1131,7 @@ input:disabled + label::before {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .range-toggle:hover {
@@ -1132,7 +1142,7 @@ input:disabled + label::before {
 
 .search-button {
   display: block;
-  margin: 0 auto;
+  margin: 0 96px 0 auto;
   padding: 6px 35px;
 
   font-size: 14px;
