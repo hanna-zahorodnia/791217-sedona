@@ -1070,19 +1070,13 @@ input:disabled + label::before {
   cursor: pointer;
 }
 
-/*.price-controls .price-min,
-.price-controls .price-max {
-  width: 92px;
-  padding-left: 65px;
-}*/
-
 .price-controls .price-min {
-  width: 102px;
+  width: 100px;
   padding-left: 65px;
 }
 
 .price-controls .price-max {
-  width: 100px;
+  width: 103px;
   padding-left: 46px;
 }
 
